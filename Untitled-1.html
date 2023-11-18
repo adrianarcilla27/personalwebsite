@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PT</title>
+        <link rel="icon" type="image/x-icon" href="/images/4.jpeg">
+    </head>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background-color: black;
+}
+a{  
+ position: relative;
+display: inline-block;
+padding: 25px 30px;
+text-transform: uppercase;
+letter-spacing: 4px;
+color: pink;
+font-size: 1.2rem;
+font-weight: bold;
+transition: .5s;
+overflow: hidden;
+margin-right: 70px;
+
+}
+a:hover{
+  background-color: lightgreen;
+  color: rgb(192, 255, 206);
+  box-shadow: 0 0 5px lightgreen,
+              0 0 25px lightgreen,
+              0 0 50px lightgreen,
+              0 0 200px lightgreen;
+              -webkit-box-reflect: below 1px  linear-gradient (transparent, pink) ;
+}
+a:first-child{
+    filter: hue-rotate(225deg);
+}
+a:first-child{
+    filter: hue-rotate(90deg);
+}
+a span {
+  position: absolute;
+  display: block;
+
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, lightgreen
+    );
+    animation: animate1 1s infinite;
+
+}
+@keyframes animate1 {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, lightgreen);
+    animation: animate2 1s infinite;
+}
+@keyframes animate2 {
+    0%{
+        top: -100%;
+    }
+    100%{ 
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, transparent, lightgreen);
+    animation: animate3 1s infinite;
+    animation-delay: .5s;
+}
+@keyframes animate3 {
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, lightgreen);
+    animation: animate4 1s infinite;
+    animation-delay: .75s;
+}
+@keyframes animate4 {
+  0%{
+    bottom: -100%;
+  }    
+  100%{
+    bottom: 100%;
+  }
+}
+    </style>
+   
+    <body>
+        <div class="wrapper">
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                HOME
+            </a>
+            <a href="file:///C:/Users/JDDC%20PISONET%20PC-9/Pictures/arcilla/Untitled-1.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                ABOUT
+            </a>
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                BLOG
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100076448257352">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                CONTACTS
+            </a>
+        </div>
+    </body>
+</html>
